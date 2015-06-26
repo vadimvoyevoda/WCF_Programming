@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Users_3VModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Users_3VModelStoreContainer">
+          <EntitySet Name="MyUsers" EntityType="Users_3VModel.Store.MyUsers" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="MyUsers">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="ULastName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="ULogin" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Pass" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Token" Type="nvarchar" MaxLength="16" />
+          <Property Name="ExpDate" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Users_3VModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Users_3VEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="MyUsers" EntityType="Users_3VModel.MyUsers" />
+        </EntityContainer>
+        <EntityType Name="MyUsers">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ULastName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ULogin" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Pass" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Token" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="ExpDate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Users_3VModelStoreContainer" CdmEntityContainer="Users_3VEntities">
+          <EntitySetMapping Name="MyUsers">
+            <EntityTypeMapping TypeName="Users_3VModel.MyUsers">
+              <MappingFragment StoreEntitySet="MyUsers">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="UName" ColumnName="UName" />
+                <ScalarProperty Name="ULastName" ColumnName="ULastName" />
+                <ScalarProperty Name="ULogin" ColumnName="ULogin" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

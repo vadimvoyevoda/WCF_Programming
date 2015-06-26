@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AuthorizeMethod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthorizeMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthorizeMethodResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserInfoMethod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserInfoMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserInfoMethodResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Salt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

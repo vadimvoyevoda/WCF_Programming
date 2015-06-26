@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.IO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.IO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="DriveType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="NoRootDirectory" />
+      <xs:enumeration value="Removable" />
+      <xs:enumeration value="Fixed" />
+      <xs:enumeration value="Network" />
+      <xs:enumeration value="CDRom" />
+      <xs:enumeration value="Ram" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DriveType" nillable="true" type="tns:DriveType" />
+</xs:schema>

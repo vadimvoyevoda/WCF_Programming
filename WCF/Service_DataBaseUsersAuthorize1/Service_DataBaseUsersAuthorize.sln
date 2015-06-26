@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service_DataBaseUsers", "DataBaseUsers\Service_DataBaseUsers.csproj", "{3C290BD5-6576-4CA7-8224-9B0B06714D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{11BF6571-7A65-428B-BD7C-269C803B78D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C290BD5-6576-4CA7-8224-9B0B06714D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C290BD5-6576-4CA7-8224-9B0B06714D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C290BD5-6576-4CA7-8224-9B0B06714D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C290BD5-6576-4CA7-8224-9B0B06714D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BF6571-7A65-428B-BD7C-269C803B78D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BF6571-7A65-428B-BD7C-269C803B78D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BF6571-7A65-428B-BD7C-269C803B78D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BF6571-7A65-428B-BD7C-269C803B78D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

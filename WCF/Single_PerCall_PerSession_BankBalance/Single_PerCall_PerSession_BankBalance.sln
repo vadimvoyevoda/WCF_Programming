@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single_PerCall_PerSession_BankBalance", "Single_PerCall_PerSession_BankBalance\Single_PerCall_PerSession_BankBalance.csproj", "{AACEDE4C-8852-4FA1-BDE4-9370538E3C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankClient", "BankClient\BankClient.csproj", "{353D933A-690F-4716-B9E4-B13720B4B806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AACEDE4C-8852-4FA1-BDE4-9370538E3C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACEDE4C-8852-4FA1-BDE4-9370538E3C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACEDE4C-8852-4FA1-BDE4-9370538E3C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACEDE4C-8852-4FA1-BDE4-9370538E3C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353D933A-690F-4716-B9E4-B13720B4B806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353D933A-690F-4716-B9E4-B13720B4B806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353D933A-690F-4716-B9E4-B13720B4B806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353D933A-690F-4716-B9E4-B13720B4B806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

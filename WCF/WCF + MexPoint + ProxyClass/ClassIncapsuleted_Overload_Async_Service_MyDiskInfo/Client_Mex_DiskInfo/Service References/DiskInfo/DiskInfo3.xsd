@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Service_MyDiskInfo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Service_MyDiskInfo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/DiskInfo?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+  <xs:complexType name="MyDiskInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvailableFreeSpace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiskName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="DiskType" type="q1:DriveType" />
+      <xs:element minOccurs="0" name="FreeSpace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalSpace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="user" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyDiskInfo" nillable="true" type="tns:MyDiskInfo" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="tns:UserType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:simpleType name="UserType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Student" />
+      <xs:enumeration value="Teacher" />
+      <xs:enumeration value="Admin" />
+      <xs:enumeration value="Unknown" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UserType" nillable="true" type="tns:UserType" />
+</xs:schema>

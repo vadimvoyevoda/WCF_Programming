@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service_MyDiskInfo", "Service_MyDiskInfo\Service_MyDiskInfo\Service_MyDiskInfo.csproj", "{1DCA425D-6802-4837-BF80-670F1D9A75C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Mex_DiskInfo", "Service_MyDiskInfo\Client_Mex_DiskInfo\Client_Mex_DiskInfo.csproj", "{D53F30C7-BB1C-4119-83C7-120536C3C06A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DCA425D-6802-4837-BF80-670F1D9A75C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCA425D-6802-4837-BF80-670F1D9A75C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCA425D-6802-4837-BF80-670F1D9A75C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCA425D-6802-4837-BF80-670F1D9A75C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53F30C7-BB1C-4119-83C7-120536C3C06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53F30C7-BB1C-4119-83C7-120536C3C06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53F30C7-BB1C-4119-83C7-120536C3C06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53F30C7-BB1C-4119-83C7-120536C3C06A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

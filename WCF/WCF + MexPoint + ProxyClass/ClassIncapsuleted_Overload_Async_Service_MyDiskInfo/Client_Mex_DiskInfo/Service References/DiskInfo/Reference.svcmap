@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4f84db0b-1364-46b9-a08c-7d5ec7eeb60d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/DiskInfo" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DiskInfo.wsdl" MetadataType="Wsdl" ID="365fb74b-ac20-47e6-808e-42b8b76b4451" SourceId="1" SourceUrl="http://localhost/DiskInfo?wsdl" />
+    <MetadataFile FileName="DiskInfo.disco" MetadataType="Disco" ID="207ee93c-2a8e-4edb-b3af-5c89005630a6" SourceId="1" SourceUrl="http://localhost/DiskInfo?disco" />
+    <MetadataFile FileName="DiskInfo.xsd" MetadataType="Schema" ID="da4f1b15-5e16-48e7-ba5a-db23d293d27c" SourceId="1" SourceUrl="http://localhost/DiskInfo?xsd=xsd1" />
+    <MetadataFile FileName="DiskInfo1.xsd" MetadataType="Schema" ID="58dbd0f5-d02d-408b-bf82-3a7d573c0acb" SourceId="1" SourceUrl="http://localhost/DiskInfo?xsd=xsd0" />
+    <MetadataFile FileName="DiskInfo2.xsd" MetadataType="Schema" ID="b02fb9a0-0de9-436a-b14a-b6998389759b" SourceId="1" SourceUrl="http://localhost/DiskInfo?xsd=xsd3" />
+    <MetadataFile FileName="DiskInfo3.xsd" MetadataType="Schema" ID="f01b0db9-ffa6-45e4-9ca0-3ee7da9ae67e" SourceId="1" SourceUrl="http://localhost/DiskInfo?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
